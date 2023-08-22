@@ -11,13 +11,16 @@ const userSurname = prompt ('Inserisci il tuo cognome');
 //chiedere colore preferito//
 const colorTop = prompt('Scrivi il tuo colore preferito');
 
+//chiedere l'eta//
+const age = prompt('Scrivi qui la tua età');
+
 //risultati in console
-console.log(`${userName + userSurname + colorTop}23`)
+console.log(`${userName + userSurname + colorTop + age}`)
 
 // selezione id
 const password = document.getElementById('passwordgen');
 console.log('password');
 
 //stampare il risultato in pagina
-password.innerHTML = `${userName + userSurname + colorTop}23`
+password.innerHTML = `${userName + userSurname + colorTop + age}`
 

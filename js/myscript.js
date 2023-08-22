@@ -15,12 +15,22 @@ const colorTop = prompt('Scrivi il tuo colore preferito');
 const age = prompt('Scrivi qui la tua età');
 
 //risultati in console
-console.log(`${userName + userSurname + colorTop + age}`)
+console.log(`${userName + userSurname + colorTop}23`)
+
 
 // selezione id
 const password = document.getElementById('passwordgen');
 console.log('password');
 
 //stampare il risultato in pagina
-password.innerHTML = `${userName + userSurname + colorTop + age}`
+password.innerHTML = `${userName + userSurname + colorTop}23`
+
+//bonus
+const chiave = document.getElementById('somma');
+console.log('chiave')
+
+//stampabonus
+chiave.innerHTML = ` La tua nuova password è: ${userName + userSurname + colorTop}${Number(age)+23}`
+console.log(Number (age) + 23);
+
 
